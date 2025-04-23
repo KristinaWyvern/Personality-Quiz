@@ -1,5 +1,5 @@
 <h2 align="center">
-  <a href="" target="_blank">Personality Quiz</a>
+  <a href="https://personality-quiz-eight.vercel.app" target="_blank">Personality Quiz</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./public/demo.png" />
