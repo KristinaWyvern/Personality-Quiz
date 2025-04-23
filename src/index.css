@@ -1,0 +1,246 @@
+
+/* General Styles */
+html {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+body{
+  background-image: url('./assets/bg.png'); 
+  background-size: 100% 100%;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* Header Styles */
+header {
+  color: black;
+  width: 100%;
+  text-align: center;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.5em;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Card Styles */
+.card {
+  background: #00000030;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px #0002;
+  margin-top: 1em;
+  padding: 1em 1em 1em 1em; 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form Styles */
+form {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+form button {
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border-color: black;
+  background: none;
+  margin-top: 10px;
+}
+
+form button[type="submit"] {
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+p {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+
+/* Question Styles */
+.card > button {
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+  width: 12em;
+  height: 8em;
+}
+
+
+button:hover {
+  transform: scale(1.25) perspective(1px)
+}
+
+/* Color */
+.bRed{
+  background-color: #f23f0d;
+  border-color: #f23f0d;
+}
+.bBlue{
+  background-color: #4bc3ca;
+  border-color: #4bc3ca;
+}
+.bGreen{
+  background-color: #a37659;
+  border-color: #a37659;
+}
+.bYellow{
+  background-color: #def0fc;
+  border-color: #def0fc;
+}
+
+/* Place */
+.bVulcano{
+  background-image: url('./assets/question/vulcano.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bOcean{
+  background-image: url('./assets/question/ocean.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bForest{
+  background-image: url('./assets/question/forest.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bSky{
+  background-image: url('./assets/question/sky.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Time of year */
+.bWinter{
+  background-image: url('./assets/question/winter.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bAutumn{
+  background-image: url('./assets/question/autumn.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bSummer{
+  background-image: url('./assets/question/summer.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bSpring{
+  background-image: url('./assets/question/spring.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* Snack */
+.bCoffe{
+  background-image: url('./assets/question/coffee.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bFruit{
+  background-image: url('./assets/question/fruit.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bPancakes{
+  background-image: url('./assets/question/pancakes.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bEggs{
+  background-image: url('./assets/question/eggs.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Bedtime */
+.bWalking{
+  background-image: url('./assets/question/walking.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bReading{
+  background-image: url('./assets/question/reading.jpeg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bWatching-movies{
+  background-image: url('./assets/question/movies.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.bSports{
+  background-image: url('./assets/question/sport.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Result */
+.artwork {
+  text-align: center;
+}
+
+.artwork img {
+  max-width: 20em;
+  max-height: 20em;
+  border-radius: 10px;
+}
