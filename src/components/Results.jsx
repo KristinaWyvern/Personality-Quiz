@@ -56,7 +56,7 @@ export default function Results({ element, artwork: initialArtwork, resetQuiz })
         </p>
         {loading  ? <LoadingSpinner /> : error ? (
           <> 
-            <img src={`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/public/${element}.jpg`} alt={element}   style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }}/>           
+            <img src={`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/src/assets/${element}.jpg`} alt={element}   style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }}/>           
             <p style={{ color: 'red', marginBottom: 24 }}>Failed to load artwork. Please try again.</p>
             <button onClick={fetchArtworkAgain} style={{ background: '#0074D9', color: '#fff', border: 'none', padding: '12px 28px', borderRadius: 6, fontSize: 16, cursor: 'pointer', marginTop: 2, marginRight:15 }}>Refresh</button>
             <button onClick={handleGoBack} style={{ background: '#0074D9', color: '#fff', border: 'none', padding: '12px 28px', borderRadius: 6, fontSize: 16, cursor: 'pointer', marginTop: 2, marginRight:15 }}> Go Back</button>
@@ -64,7 +64,7 @@ export default function Results({ element, artwork: initialArtwork, resetQuiz })
         ) : artwork ? (
           <div className="artwork" style={{ marginBottom: 24 }}>
             <h2 style={{ fontSize: 22, margin: '10px 0' }}>{artwork.title}</h2>
-            <img src={artwork.primaryImage||`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/public/${element}.jpg`} alt={artwork.title} style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }} />
+            <img src={artwork.primaryImage||`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/src/assets/${element}.jpg`} alt={artwork.title} style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }} />
             <p style={{ fontStyle: 'italic', color: 'black' }}>{artwork.artistDisplayName}</p>
             <p style={{ color: '#444444' }}>{artwork.objectDate}</p>
             <button onClick={fetchArtworkAgain} style={{ background: '#0074D9', color: '#fff', border: 'none', padding: '12px 28px', borderRadius: 6, fontSize: 16, cursor: 'pointer', marginTop: 2, marginRight:15 }}>Refresh</button>
@@ -72,7 +72,7 @@ export default function Results({ element, artwork: initialArtwork, resetQuiz })
           </div>
         ) : (
           <>
-            <img src={`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/public/${element}.jpg`} alt={element}   style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }}/>
+            <img src={`https://raw.githubusercontent.com/KristinaWyvern/Personality-Quiz/main/src/assets/${element}.jpg`} alt={element}   style={{ maxWidth: '80%', borderRadius: 10, margin: '10px 0' }}/>
             <p style={{ color: '#444444', marginBottom: 24 }}>No artwork found.</p>            
             <button onClick={fetchArtworkAgain} style={{ background: '#0074D9', color: '#fff', border: 'none', padding: '12px 28px', borderRadius: 6, fontSize: 16, cursor: 'pointer', marginTop: 2, marginRight:15 }}>Refresh</button>            
             <button onClick={handleGoBack} style={{ background: '#0074D9', color: '#fff', border: 'none', padding: '12px 28px', borderRadius: 6, fontSize: 16, cursor: 'pointer', marginTop: 2, marginRight:15 }}> Go Back</button>
